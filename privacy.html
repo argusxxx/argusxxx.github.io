@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ArgusFiyatBot Backup gizlilik politikası: Google Drive izni, yedeklerin şifrelenmesi, saklanması ve silinmesi.">
+  <title>Gizlilik Politikası — ArgusFiyatBot Backup</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, -apple-system, Segoe UI, sans-serif; }
+    body { max-width: 730px; margin: 0 auto; padding: 4rem 1.3rem 6rem; line-height: 1.7; }
+    h1 { font-size: clamp(1.7rem,4vw,2.4rem); line-height:1.2; }
+    h2 { margin-top: 2rem; }
+    .subtitle { opacity: .75; }
+    a { color: #3979d8; }
+    @media (prefers-color-scheme: light) { a { color: #1557a6; } }
+  </style>
+</head>
+<body>
+  <header>
+    <p><a href="index.html">← Ana sayfa</a></p>
+    <h1>ArgusFiyatBot Backup — Gizlilik Politikası</h1>
+    <p class="subtitle">Son güncelleme: 17 Ekim 2026</p>
+  </header>
+  <main>
+    <h2>1. Uygulamanın amacı</h2>
+    <p>ArgusFiyatBot Backup, tek bir kullanıcının yönettiği ArgusFiyatBot fiyat takip botunun veritabanını kullanıcının Google Drive hesabında yedeklemek ve gerektiğinde geri yüklemek amacıyla tasarlanmıştır. Herkese açık bir üyelik veya dosya depolama hizmeti değildir.</p>
+
+    <h2>2. İşlenen bilgiler ve Google erişimi</h2>
+    <p>Yedeklenecek SQLite veritabanı, fiyat takibindeki ürün adları, ürün bağlantıları, hedef fiyatlar, geçmiş fiyatlar, işlem zamanları ve botun çalışması için gerekli Telegram yönetici kimliği gibi teknik kayıtlar içerebilir. Google Drive bağlantısı kurulduğunda uygulama, yalnızca yedek dosyalarını Google Drive'a yüklemek, listelemek, doğrulamak, geri indirmek ve kullanıcının belirlediği saklama politikasına göre silmek amacıyla Drive API'sine erişir.</p>
+    <p>Yalnızca gerekli Drive izinlerinin kullanılması amaçlanır; seçilen <code>drive.file</code> izni, uygulamanın oluşturduğu veya kullanıcı tarafından uygulama için açılan dosyalara erişimle sınırlıdır. Uygulama, kullanıcının diğer Drive belgelerini incelemek için tasarlanmamıştır.</p>
+
+    <h2>3. Kullanım, şifreleme ve saklama</h2>
+    <p>Sunucu tarafında oluşturulan yedekler Google Drive'a gönderilmeden önce rclone crypt ile şifrelenecek şekilde yapılandırılır. Şifreleme anahtarı ve OAuth kimlik bilgileri herkese açık web sayfalarında veya GitHub Pages deposunda tutulmaz. Yetkilendirme bilgileri yalnızca kullanıcının yönettiği özel sunucu yapılandırmasında tutulur.</p>
+    <p>Yedek dosyaları kullanıcının Google Drive alanında, kullanıcı bunları silene veya ayrıca yapılandırılmış bir saklama kuralı uygulayana kadar tutulur. Yerel ve uzak yedek saklama süreleri birbirinden farklı olabilir.</p>
+
+    <h2>4. Paylaşım ve sınırlı kullanım</h2>
+    <p>Google kullanıcı verileri satılmaz; reklam, profil çıkarma veya yapay zekâ modeli eğitimi amacıyla kullanılmaz. Yedek dosyaları yalnızca kullanıcının kendi Google Drive hesabına depolama hizmeti kapsamında aktarılır. Başka kişilere pazarlama veya benzeri amaçlarla aktarılmaz. Google API'lerinden alınan verilerin kullanımı yedekleme ve geri yükleme amacıyla sınırlıdır.</p>
+
+    <h2>5. Erişimi kaldırma ve verileri silme</h2>
+    <p>Kullanıcı, Google Hesabı → Güvenlik → Üçüncü taraf bağlantıları bölümünden ArgusFiyatBot Backup uygulamasının erişimini kaldırabilir. Ayrıca kendi Google Drive hesabındaki yedek dosyalarını ve VPS üzerindeki yerel kopyaları silebilir. Erişimin kaldırılması önceden oluşturulmuş yedekleri otomatik olarak silmez.</p>
+
+    <h2>6. Bu web sitesi</h2>
+    <p>Bu sayfalar statik GitHub Pages dosyalarıdır. Site kendi analitik veya izleme kodunu çalıştırmaz; ziyaretçilerden form yoluyla bilgi toplamaz. GitHub, barındırma altyapısı kapsamında teknik erişim kayıtları işleyebilir; bu işlemler GitHub'ın kendi gizlilik politikasına tabidir.</p>
+
+    <h2>7. Değişiklikler ve iletişim</h2>
+    <p>Google Drive izinleri, saklama biçimi veya kullanım amacı değişirse bu politika güncellenir. Uygulamayla ilgili sorular için <a href="https://github.com/argusxxx" rel="noopener noreferrer">geliştiricinin GitHub profili</a> kullanılabilir.</p>
+  </main>
+  <footer>
+    <p><a href="index.html">Ana sayfaya dön</a></p>
+  </footer>
+</body>
+</html>

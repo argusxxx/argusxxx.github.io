@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="ArgusFiyatBot Backup: kişisel fiyat takip botunun Google Drive'a şifreli yedekleme işlemi hakkında bilgi.">
+  <title>ArgusFiyatBot Backup</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, -apple-system, Segoe UI, sans-serif; }
+    body { max-width: 730px; margin: 0 auto; padding: 4rem 1.3rem 6rem; line-height: 1.7; }
+    h1 { font-size: clamp(1.8rem,4vw,2.6rem); line-height:1.2; }
+    .subtitle { opacity: .75; }
+    .panel { border: 1px solid #9997; border-radius: 14px; padding: 1.3rem 1.6rem; margin: 2rem 0; }
+    a { color: #3979d8; }
+    @media (prefers-color-scheme: light) { a { color: #1557a6; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ArgusFiyatBot Backup</h1>
+    <p class="subtitle">Kişisel fiyat takip botu için Google Drive yedekleme uygulaması</p>
+  </header>
+  <main>
+    <p>ArgusFiyatBot, tek bir kullanıcı tarafından yönetilen özel bir Telegram fiyat takip botudur. <strong>ArgusFiyatBot Backup</strong>, bu botun veritabanı yedeklerini Google Drive üzerinde saklamak ve gerektiğinde geri yüklemek için kullanılan ayrı bir kişisel OAuth uygulamasıdır.</p>
+    <section class="panel">
+      <h2>Google Drive erişimi neden gerekli?</h2>
+      <p>Uygulama, izin verildiğinde botun SQLite veritabanının yedeklerini sunucuda şifreleyip kullanıcının kendi Google Drive hesabına aktarmak ve gerektiğinde bu yedekleri geri almak için Google Drive API kullanır.</p>
+      <p>Hedeflenen izin <code>drive.file</code> olup uygulamanın oluşturduğu veya kullanıcı tarafından açıkça seçilen dosyalarla sınırlıdır. Uygulama genel Drive dosyalarını taramak, içeriklerini pazarlama amacıyla kullanmak veya başka kişilere hizmet vermek için tasarlanmamıştır.</p>
+    </section>
+    <h2>Kimler kullanabilir?</h2>
+    <p>Bu, herkese sunulan bir hizmet değildir; yalnızca uygulama sahibinin kendi yedekleri için hazırlanmıştır. Web sayfası hesap oluşturma, giriş yapma veya dosya yükleme işlevi sunmaz.</p>
+    <h2>Gizlilik</h2>
+    <p>Hangi verilerin işlendiği, yedeklerin nerede saklandığı ve erişimin nasıl kaldırılabileceği <a href="privacy.html">Gizlilik Politikası</a> sayfasında açıklanmıştır.</p>
+  </main>
+  <footer>
+    <p>Geliştirici iletişimi: <a href="https://github.com/argusxxx" rel="noopener noreferrer">GitHub profili</a> · <a href="privacy.html">Gizlilik Politikası</a></p>
+    <p class="subtitle">Bilgilendirme sayfasıdır. Google hesabı giriş bilgileri bu sitede toplanmaz.</p>
+  </footer>
+</body>
+</html>
